@@ -1,0 +1,187 @@
+:root {
+    --index: calc(1vw + 1vh)
+  /* --body-back: #202020; */
+  --body-back: #171717;
+  --color1: #080C25;
+  --color2: #161E35;
+  --color3: #293659;
+  --color4: #3071E7;
+  --color5: #A6B2EC;
+  --color-text: #fdfff5;
+}
+@font-face {
+  font-family: "Manrope-Light";
+  src: url("/fonts/manrope/Manrope-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Manrope-Regular";
+  src: url("/fonts/manrope/Manrope-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Manrope-Medium";
+  src: url("/fonts/manrope/Manrope-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Manrope-Bold";
+  src: url("/fonts/manrope/Manrope-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Manrope-ExtraBold";
+  src: url("/fonts/manrope/Manrope-ExtraBold.woff2") format("woff2");
+}
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Manrope-Regular";
+  color: var(--color-text);
+}
+body {
+    background-color: var(--body-back);
+    width: 100%;
+}
+.maindiv {
+    width: 100%;
+}
+.hellodiv{
+    position: relative;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+.helloimg{
+    width: 100%;
+    justify-content: start;
+    align-items: end;
+    
+}
+.helloimg{
+    width: 100%;
+    justify-content: start;
+    align-items: end;
+    
+}
+
+.blackoutdiv{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: radial-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.9));
+    /* background-color: rgb(0, 0, 0, 0.58); */
+}
+
+.hellocontent{
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+.headerdiv{
+  display: flex;
+  justify-content: space-between;
+  height: 6vw;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(to bottom, rgb(0, 0, 0, 0.5 ), rgb(0, 0, 0, 0.1 ));
+  /* background: linear-gradient(black , transparent); */
+}
+.headerdiv.fixed-top{
+  position: fixed;
+  background: none;
+  /* background-color: white; */
+  background-color: transparent;
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 20px rgb(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.headerdiv.fixed-top a,
+.headerdiv.fixed-top span{
+  /* color: var(--color1); */
+}
+.headerlogodiv{
+  width: 100%;
+  width: auto;
+  overflow: hidden;
+}
+.logoimg{
+  height: 100%;
+}
+.headerinfodiv{
+  display: flex;
+  align-items: center;
+  margin-left: 14vw;
+}
+.headerinfodiv a{
+  margin-right: 2vw;
+  font-size: 1.5vw;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+.headerinfodiv a:hover{
+  color: var(--color5);
+}
+.accautdiv{
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin-right: 1.5vw; */
+  cursor: pointer;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.accautdiv:hover > .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.accounticon{
+  font-size: 2.5vw;
+  transition: all 0.3s ease-in-out;
+}
+#accountspan{
+  font-size: 1vw;
+  transition: all 0.3s ease-in-out;
+}
+
+.accautdiv:hover > .accounticon,
+.accautdiv:hover > #accountspan {
+  color: var(--color5);
+}
+.mainhellocontent{
+  height: 100%;
+  width: auto;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 8vw;
+  padding-left: 5vw;
+  margin-right: 40vw;
+}
+.headerp{
+  font-size: 4vw;
+  font-family: "Manrope-Bold";
+  text-shadow: 0 0 3vw rgb(0, 0, 0, 1);
+}
+.headerp2{
+  margin-top: 3vw;
+  font-size: 1.8vw;
+  text-shadow: 0 0 3vw rgb(0, 0, 0, 1);
+}
+.headeruserdiv{
+  display: flex;
+}
