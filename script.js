@@ -1,5 +1,7 @@
 let bodyWidth = document.body.clientWidth;
+let bodyHeight = document.body.clientHeight;
 console.log(bodyWidth);
+console.log(bodyHeight);
 const div = document.querySelector('.headerdiv');
 const placeholder = document.createElement('div');
 placeholder.style.height = div.offsetHeight + 'px'; 
