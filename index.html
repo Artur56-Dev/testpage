@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="cache-control" content="max-age=0" />
     <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Cache-Control" content="no-cache" />
-    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="Expires" content="0" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.4.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style.css">
     <title>Покупка недвижимости в России</title>
@@ -17,8 +19,41 @@
 <body>
     <div class="maindiv">
         <div class="hellodiv">
-            <!-- <img class="helloimg" src="https://begeton.com/files/articles/122/4/18/NzZJqTWzoXZKxGpvQKgzc5mxwz9nxr2P.jpg.jpeg"> -->
-            <img class="helloimg" src="https://alterainvest.ru/upload/iblock/fe7/fe7c4fd266ad1ee0a642ca36230a0535.jpg">
+            <?php
+            $rand = rand(1, 4);
+            switch ($rand) {
+                case 1:
+                    $img = '<img class="helloimg" src="https://cdn-p.cian.site/images/55/260/631/san-siti-sochi-jk-1360625549-10.jpg">';
+                    // $img = '<img class="helloimg" src="https://www.einsurance.com/wp-content/uploads/Condominium-Insurance.jpg">';
+                    echo $img;
+                    break;
+                case 2:
+                    $img = '<img class="helloimg" src="https://miriadagroup.ru/wp-content/uploads/2017/08/03-e1505386266928.jpg">';
+                    echo $img;
+                    break;
+                case 3:
+                    $img = '<img class="helloimg" src="https://kmory.ru/img/Резиденция.jpg">';
+                    echo $img;
+                    break;
+                case 4:
+                    $img = '<img class="helloimg" src="https://spbmagazine.ru/wp-content/uploads/2019/10/i.jpg">';
+                    // $img = '<img class="helloimg" src="https://design101blog.files.wordpress.com/2013/08/3d-modern-building-design-25.jpg">';
+                    echo $img;
+                    break;
+            }
+            ?>
+            <!-- <img class="helloimg" src="https://alterainvest.ru/upload/iblock/fe7/fe7c4fd266ad1ee0a642ca36230a0535.jpg"> -->
+            <!-- <img class="helloimg" src="https://www.einsurance.com/wp-content/uploads/Condominium-Insurance.jpg"> -->
+            <!-- <img class="helloimg" src="https://news1.ru/wp-content/uploads/2017/06/2-e1497612810369.jpg"> -->
+            <!-- <img class="helloimg" src="https://webpulse.imgsmail.ru/imgpreview?key=pulse_cabinet-image-827fd626-37a0-4441-8568-4995a3322ad6&mb=webpulse"> -->
+            <!-- <img class="helloimg" src="https://salesap.ru/blog/wp-content/uploads/2017/04/Depositphotos_46077129_original-kopiya-1200x630-cropped.jpg"> -->
+            <!-- <img class="helloimg" src="https://infonedvizhimost.com/wp-content/uploads/2023/02/44cd5afb69393de655f26eb3464f6a65.jpeg"> -->
+            <!-- <img class="helloimg" src="https://invisionstudio.com/wp-content/uploads/2015/11/Seattle-commercial-real-estate-photography-company-aerial-photography-services-virtual-tours-for-commercial.jpg"> -->
+            <!-- <img class="helloimg" src="https://design101blog.files.wordpress.com/2013/08/3d-modern-building-design-25.jpg"> -->
+            <!-- <img class="helloimg" src="https://avatars.dzeninfra.ru/get-zen_doc/1244179/pub_60ca00a8171c814bc632879c_60ca0607f57aa01f192fb716/scale_1200"> -->
+            <!-- <img class="helloimg" src="http://1gagarin.spb.ru/wp-content/uploads/2018/05/vtorichnaya_nedvizhimost_moskovskiy_rayon1.jpg"> -->
+            <!-- <img class="helloimg" src="https://pr1.zoon.ru/5buZVV5HVf_4Taz9PnDxmg/2400x1500,q75/4px-BW84_n3An8gCUWNaP0Xj5yr-KGEiPQ4KMeUr7wfqR_CoVJLGiQyBvexrBy_J3AFgHnh12xmMN9ON07sPTg__0RiExPClxK8zNzEOXfZ6u7tS7jiLg8sJ921Fr9A_20yoDmgIClsuTV80g54uE0AU94Dn54Eg3s9swDvhC1GMrQnWAM5fBOaEDzQGYl62BpAtuztTD7EeakJjZ8CxPeCyHWjwNPK7VcJ_inVkxQPn1KVMVhm9Q9HpyYzIpej3SejrJYkZvRDYh2qJRTik1q6LdNHYxTo8QhEsJD6WpDgJ7D6aoocQ5A"> -->
+            <!-- <img class="helloimg" src="https://bk-giskon.com.ua/wp-content/uploads/2021/05/34567.jpg"> -->
             <div class="blackoutdiv"></div>
             <div class="hellocontent">
                 <div class="headerdiv">
@@ -40,7 +75,7 @@
                         </div>
                         <div class="accautdiv">
                             <span class="material-symbols-outlined accounticon">
-                            real_estate_agent
+                                real_estate_agent
                             </span>
                             <span id="accountspan">Дома</span>
                         </div>
@@ -53,16 +88,121 @@
                     </div>
                 </div>
                 <div class="mainhellocontent">
+                    <!-- <div  class="blackback"></div> -->
                     <p class="headerp">Недвижимость премиум класса в России</p>
                     <p class="headerp2">Мы создаем дома, инфраструктуру и сервисы, которые экономят ваше время, чтобы вы могли потратить его на то, что действительно важно</p>
                 </div>
             </div>
         </div>
         <div class="maincontent">
-        <img class="helloimg" src="https://begeton.com/files/articles/122/4/18/NzZJqTWzoXZKxGpvQKgzc5mxwz9nxr2P.jpg.jpeg">
-        <img class="helloimg" src="https://begeton.com/files/articles/122/4/18/NzZJqTWzoXZKxGpvQKgzc5mxwz9nxr2P.jpg.jpeg">
-        <img class="helloimg" src="https://begeton.com/files/articles/122/4/18/NzZJqTWzoXZKxGpvQKgzc5mxwz9nxr2P.jpg.jpeg">
+            <div class="conteiner1">
+                <div class="a1">
+                    <div class="b1">
+                        <p class="headingp">Все нужное всегда рядом</p>
+                    </div>
+                    <div class="b2">
+                        <div class="c1">
+                            <p class="p1">5-10</p>
+                            <p class="p2">минут до </br> центра города</p>
+                        </div>
+                        <div class="c1">
+                            <p class="p1">5-10</p>
+                            <p class="p2">минут до </br> парков и скверов</p>
+                        </div>
+                        <div class="c1">
+                            <p class="p1">15-20</p>
+                            <p class="p2">минут до </br> аэропрота</p>
+                        </div>
+                        <div class="c1">
+                            <p class="p1">5-10</p>
+                            <p class="p2">минут до </br> торговых центров</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="heading">
+                <p class="headingp">Наша коллекция раскошных интерьеров</p>
+                <p class="headingp2">Выбирайте из множества вариантов от классических до современных и создавайте уют и комфорт в своем доме, который будет по достоинству оценен всеми ваши гостями.</p>
+            </div>
+            <div class="container2">
+                <div class="photobanner">
+                    <img src="https://pic.voombu.ru/img/hotel/max1280x900/817/81790423.jpg">
+                    <img src="https://moretraveler.com/wp-content/uploads/2022/12/sa2-5.jpg">
+                    <img src="https://bucwar.ru/wp-content/uploads/2019/05/armani-hotel-dubai-09.jpg">
+                    <img src="https://idei.club/uploads/posts/2022-03/1647592143_35-idei-club-p-intereri-v-emiratakh-interer-krasivo-foto-44.jpg">
+                    <img src="https://pro-dachnikov.com/uploads/posts/2023-01/1672790240_pro-dachnikov-com-p-kukhnya-bogataya-sovremennaya-foto-40.jpg">
+                    <img src="http://holidayrentalagency.com/wp-content/uploads/2019/07/185775834.jpg">
+                    <img src="https://i.pinimg.com/originals/e7/bf/fd/e7bffd674918bc4b8f65fb2ce43fd81b.jpg">
+                    <img src="https://www.zeninteriors.net/wp-content/uploads/2019/04/Burj-Khalifa-4302-20.png">
+                    <img src="https://almode.ru/uploads/posts/2021-04/1619784060_24-p-vannaya-komnata-s-dzhakuzi-i-dushem-29.jpg">
+                    <img src="https://dubai-luxury.property/ru/uploads/images/2022-04/cbfa8e18e68fbdc597ad792f6bf6b789.jpg">
+                    <img src="https://pic.voombu.ru/img/hotel/max1280x900/817/81790423.jpg">
+                    <img src="https://moretraveler.com/wp-content/uploads/2022/12/sa2-5.jpg">
+                    <img src="https://bucwar.ru/wp-content/uploads/2019/05/armani-hotel-dubai-09.jpg">
+                    <img src="https://idei.club/uploads/posts/2022-03/1647592143_35-idei-club-p-intereri-v-emiratakh-interer-krasivo-foto-44.jpg">
+                    <img src="https://pro-dachnikov.com/uploads/posts/2023-01/1672790240_pro-dachnikov-com-p-kukhnya-bogataya-sovremennaya-foto-40.jpg">
+                    <img src="http://holidayrentalagency.com/wp-content/uploads/2019/07/185775834.jpg">
+                    <img src="https://i.pinimg.com/originals/e7/bf/fd/e7bffd674918bc4b8f65fb2ce43fd81b.jpg">
+                    <img src="https://www.zeninteriors.net/wp-content/uploads/2019/04/Burj-Khalifa-4302-20.png">
+                    <img src="https://almode.ru/uploads/posts/2021-04/1619784060_24-p-vannaya-komnata-s-dzhakuzi-i-dushem-29.jpg">
+                    <img src="https://dubai-luxury.property/ru/uploads/images/2022-04/cbfa8e18e68fbdc597ad792f6bf6b789.jpg">
+                </div>
+            </div>
+            <div class="container3">
+                <div class="heading">
+                    <p class="headingp">Купи квартиру в одном из городов России</p>
+                </div>
+                <div class="a1">
+                    <div class="b1">
+                        <div class="div">
+                            <img style="transition: all 0.3s ease-in-out;" src="image/MoscowEstate-01.png">
+                        </div>
+                        <div class="description">
+                            <p class="p1">от 5.2 млн</p>
+                            <p class="p2">Москва, Пресненская набережная 6</p>
+                            <p class="p3">Сочетание истории с яркой современной архитектурой, комфортабельной планировкой и удачным месторасположением в центре.</p>
+                        </div>
+                        <img class="image1" src="https://cdn-p.cian.site/images/55/260/631/san-siti-sochi-jk-1360625549-10.jpg"></img>
+                    </div>
+                    <div class="b2">
+                        <div class="div">
+                            <img style="transition: all 0.3s ease-in-out;" src="image/fredland-01.png">
+                        </div>
+                        <div class="description">
+                            <p class="p1">от 5.2 млн</p>
+                            <p class="p2">Москва, Пресненская набережная 6</p>
+                            <p class="p3">Сочетание истории с яркой современной архитектурой, комфортабельной планировкой и удачным месторасположением в центре.</p>
+                        </div>
+                        <img class="image1" src="https://kmory.ru/img/Резиденция.jpg"></img>
+                    </div>
+                </div>
+                <div class="a2">
+                    <div class="b1">
+                        <div class="div">
+                            <img style="transition: all 0.3s ease-in-out;" src="image/TeodorCrone-01.png">
+                        </div>
+                        <div class="description">
+                            <p class="p1">от 5.2 млн</p>
+                            <p class="p2">Москва, Пресненская набережная 6</p>
+                            <p class="p3">Сочетание истории с яркой современной архитектурой, комфортабельной планировкой и удачным месторасположением в центре.</p>
+                        </div>
+                        <img class="image1" src="https://miriadagroup.ru/wp-content/uploads/2017/08/03-e1505386266928.jpg"></img>
+                    </div>
+                    <div class="b2">
+                        <div class="div">
+                            <img style="transition: all 0.3s ease-in-out;" src="image/PrincessRoyale-01.png">
+                        </div>
+                        <div class="description">
+                            <p class="p1">от 5.2 млн</p>
+                            <p class="p2">Москва, Пресненская набережная 6</p>
+                            <p class="p3">Сочетание истории с яркой современной архитектурой, комфортабельной планировкой и удачным месторасположением в центре.</p>
+                        </div>
+                        <img class="image1" src="https://spbmagazine.ru/wp-content/uploads/2019/10/i.jpg"></img>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
     </div>
     <script src="script.js"></script>
 </body>
