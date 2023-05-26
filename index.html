@@ -1,3 +1,7 @@
+<?php
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,7 +23,41 @@
 <body>
     <div class="maindiv">
         <div class="hellodiv">
-            <img class="helloimg" src="https://cdn-p.cian.site/images/55/260/631/san-siti-sochi-jk-1360625549-10.jpg">
+            <?php
+            $rand = rand(1, 4);
+            switch ($rand) {
+                case 1:
+                    $img = '<img class="helloimg" src="https://cdn-p.cian.site/images/55/260/631/san-siti-sochi-jk-1360625549-10.jpg">';
+                    // $img = '<img class="helloimg" src="https://www.einsurance.com/wp-content/uploads/Condominium-Insurance.jpg">';
+                    echo $img;
+                    break;
+                case 2:
+                    $img = '<img class="helloimg" src="https://miriadagroup.ru/wp-content/uploads/2017/08/03-e1505386266928.jpg">';
+                    echo $img;
+                    break;
+                case 3:
+                    $img = '<img class="helloimg" src="https://kmory.ru/img/Резиденция.jpg">';
+                    echo $img;
+                    break;
+                case 4:
+                    $img = '<img class="helloimg" src="https://spbmagazine.ru/wp-content/uploads/2019/10/i.jpg">';
+                    // $img = '<img class="helloimg" src="https://design101blog.files.wordpress.com/2013/08/3d-modern-building-design-25.jpg">';
+                    echo $img;
+                    break;
+            }
+            ?>
+            <!-- <img class="helloimg" src="https://alterainvest.ru/upload/iblock/fe7/fe7c4fd266ad1ee0a642ca36230a0535.jpg"> -->
+            <!-- <img class="helloimg" src="https://www.einsurance.com/wp-content/uploads/Condominium-Insurance.jpg"> -->
+            <!-- <img class="helloimg" src="https://news1.ru/wp-content/uploads/2017/06/2-e1497612810369.jpg"> -->
+            <!-- <img class="helloimg" src="https://webpulse.imgsmail.ru/imgpreview?key=pulse_cabinet-image-827fd626-37a0-4441-8568-4995a3322ad6&mb=webpulse"> -->
+            <!-- <img class="helloimg" src="https://salesap.ru/blog/wp-content/uploads/2017/04/Depositphotos_46077129_original-kopiya-1200x630-cropped.jpg"> -->
+            <!-- <img class="helloimg" src="https://infonedvizhimost.com/wp-content/uploads/2023/02/44cd5afb69393de655f26eb3464f6a65.jpeg"> -->
+            <!-- <img class="helloimg" src="https://invisionstudio.com/wp-content/uploads/2015/11/Seattle-commercial-real-estate-photography-company-aerial-photography-services-virtual-tours-for-commercial.jpg"> -->
+            <!-- <img class="helloimg" src="https://design101blog.files.wordpress.com/2013/08/3d-modern-building-design-25.jpg"> -->
+            <!-- <img class="helloimg" src="https://avatars.dzeninfra.ru/get-zen_doc/1244179/pub_60ca00a8171c814bc632879c_60ca0607f57aa01f192fb716/scale_1200"> -->
+            <!-- <img class="helloimg" src="http://1gagarin.spb.ru/wp-content/uploads/2018/05/vtorichnaya_nedvizhimost_moskovskiy_rayon1.jpg"> -->
+            <!-- <img class="helloimg" src="https://pr1.zoon.ru/5buZVV5HVf_4Taz9PnDxmg/2400x1500,q75/4px-BW84_n3An8gCUWNaP0Xj5yr-KGEiPQ4KMeUr7wfqR_CoVJLGiQyBvexrBy_J3AFgHnh12xmMN9ON07sPTg__0RiExPClxK8zNzEOXfZ6u7tS7jiLg8sJ921Fr9A_20yoDmgIClsuTV80g54uE0AU94Dn54Eg3s9swDvhC1GMrQnWAM5fBOaEDzQGYl62BpAtuztTD7EeakJjZ8CxPeCyHWjwNPK7VcJ_inVkxQPn1KVMVhm9Q9HpyYzIpej3SejrJYkZvRDYh2qJRTik1q6LdNHYxTo8QhEsJD6WpDgJ7D6aoocQ5A"> -->
+            <!-- <img class="helloimg" src="https://bk-giskon.com.ua/wp-content/uploads/2021/05/34567.jpg"> -->
             <div class="blackoutdiv"></div>
             <div class="hellocontent">
                 <div class="headerdiv">
@@ -91,7 +129,7 @@
                 <p class="headingp2">Выбирайте из множества вариантов от классических до современных и создавайте уют и комфорт в своем доме, который будет по достоинству оценен всеми ваши гостями.</p>
             </div>
             <div class="container2">
-                <div class="photobanner">
+                <div class="photobanner banner1">
                     <img src="https://pic.voombu.ru/img/hotel/max1280x900/817/81790423.jpg">
                     <img src="https://moretraveler.com/wp-content/uploads/2022/12/sa2-5.jpg">
                     <img src="https://bucwar.ru/wp-content/uploads/2019/05/armani-hotel-dubai-09.jpg">
@@ -112,6 +150,54 @@
                     <img src="https://www.zeninteriors.net/wp-content/uploads/2019/04/Burj-Khalifa-4302-20.png">
                     <img src="https://almode.ru/uploads/posts/2021-04/1619784060_24-p-vannaya-komnata-s-dzhakuzi-i-dushem-29.jpg">
                     <img src="https://dubai-luxury.property/ru/uploads/images/2022-04/cbfa8e18e68fbdc597ad792f6bf6b789.jpg">
+                </div>
+            </div>
+            <div class="container2">
+                <div class="photobanner banner2">
+                    <img src="https://lampaexpert.ru/wp-content/uploads/2020/08/blobid1597923686500.jpg">
+                    <img src="https://rstart-shop.ru/wp-content/uploads/3/5/d/35d1338480944bfecc7a8c0ce70f6076.jpeg">
+                    <img src="https://rstart-shop.ru/wp-content/uploads/f/8/d/f8df9843230ef84045cf24876cdff36f.jpeg">
+                    <img src="https://pro-dachnikov.com/uploads/posts/2023-01/1673910013_pro-dachnikov-com-p-bra-v-gostinoi-v-interere-foto-80.jpg">
+                    <img src="https://pro-dachnikov.com/uploads/posts/2021-07/1627422136_63-p-krasivie-sovremennie-intereri-domov-foto-63.jpg">
+                    <img src="https://almode.ru/uploads/posts/2021-06/1624025161_5-almode_ru-p-luchshie-intereri-kvartir-6.jpg">
+                    <img src="https://pro-dachnikov.com/uploads/posts/2021-12/1638675437_32-pro-dachnikov-com-p-krasivii-interer-kukhni-v-kvartire-foto-32.jpg">
+                    <img src="https://i.pinimg.com/originals/a6/0e/3b/a60e3bfdf4ebb4a70ea6ea96ce21abf1.jpg">
+                    <img src="https://pro-dachnikov.com/uploads/posts/2021-10/1634606221_22-p-kvartira-s-terrasoi-foto-23.jpg">
+                    <img src="https://mykaleidoscope.ru/uploads/posts/2020-02/1582219070_57-p-minimalizm-v-interere-gostinikh-79.jpg">
+                    <img src="https://lampaexpert.ru/wp-content/uploads/2020/08/blobid1597923686500.jpg">
+                    <img src="https://rstart-shop.ru/wp-content/uploads/3/5/d/35d1338480944bfecc7a8c0ce70f6076.jpeg">
+                    <img src="https://rstart-shop.ru/wp-content/uploads/f/8/d/f8df9843230ef84045cf24876cdff36f.jpeg">
+                    <img src="https://pro-dachnikov.com/uploads/posts/2023-01/1673910013_pro-dachnikov-com-p-bra-v-gostinoi-v-interere-foto-80.jpg">
+                    <img src="https://pro-dachnikov.com/uploads/posts/2021-07/1627422136_63-p-krasivie-sovremennie-intereri-domov-foto-63.jpg">
+                    <img src="https://almode.ru/uploads/posts/2021-06/1624025161_5-almode_ru-p-luchshie-intereri-kvartir-6.jpg">
+                    <img src="https://pro-dachnikov.com/uploads/posts/2021-12/1638675437_32-pro-dachnikov-com-p-krasivii-interer-kukhni-v-kvartire-foto-32.jpg">
+                    <img src="https://i.pinimg.com/originals/a6/0e/3b/a60e3bfdf4ebb4a70ea6ea96ce21abf1.jpg">
+                    <img src="https://pro-dachnikov.com/uploads/posts/2021-10/1634606221_22-p-kvartira-s-terrasoi-foto-23.jpg">
+                    <img src="https://mykaleidoscope.ru/uploads/posts/2020-02/1582219070_57-p-minimalizm-v-interere-gostinikh-79.jpg">
+                </div>
+            </div>
+            <div class="container2">
+                <div class="photobanner banner3">
+                    <img src="https://almode.ru/uploads/posts/2021-06/1624956795_25-almode_ru-p-kvartira-v-temnom-stile-25.jpg">
+                    <img src="https://wp-s.ru/wallpapers/2/13/512992744204291/dizajnerskij-interer-kuxni-s-krasivoj-lyustroj.jpg">
+                    <img src="https://dipplast.ru/wp-content/uploads/a/7/b/a7b1972520871abb9f876eb78043f55d.jpeg">
+                    <img src="https://pro-dachnikov.com/uploads/posts/2021-10/1634632067_4-p-krasivie-letnie-verandi-foto-4.jpg">
+                    <img src="https://almode.ru/uploads/posts/2021-07/1625236673_43-almode_ru-p-krasivie-dizainerskie-kvartiri-44.jpg">
+                    <img src="https://interiorsmall.ru/wp-content/uploads/dizaynerskaya-kvartira-studiya-17.jpeg">
+                    <img src="https://almode.ru/uploads/posts/2021-04/1619785306_28-p-elitnaya-otdelka-vannoi-komnati-29.jpg">
+                    <img src="http://static.tildacdn.com/tild6133-3063-4264-b861-336132626636/t5000x3750.jpg">
+                    <img src="https://moidomiks.ru/wp-content/uploads/2019/02/1-28.jpg">
+                    <img src="https://pro-dachnikov.com/uploads/posts/2021-10/1633389564_36-p-krasivaya-bolshaya-kukhnya-v-dome-foto-39.jpg">
+                    <img src="https://almode.ru/uploads/posts/2021-06/1624956795_25-almode_ru-p-kvartira-v-temnom-stile-25.jpg">
+                    <img src="https://wp-s.ru/wallpapers/2/13/512992744204291/dizajnerskij-interer-kuxni-s-krasivoj-lyustroj.jpg">
+                    <img src="https://dipplast.ru/wp-content/uploads/a/7/b/a7b1972520871abb9f876eb78043f55d.jpeg">
+                    <img src="https://pro-dachnikov.com/uploads/posts/2021-10/1634632067_4-p-krasivie-letnie-verandi-foto-4.jpg">
+                    <img src="http://cdn.barbdelollis.com/wp-content/uploads/two-sophisticated-luxury-apartments-includes-floor_187014.jpg">
+                    <img src="https://interiorsmall.ru/wp-content/uploads/dizaynerskaya-kvartira-studiya-17.jpeg">
+                    <img src="https://almode.ru/uploads/posts/2021-04/1619785306_28-p-elitnaya-otdelka-vannoi-komnati-29.jpg">
+                    <img src="http://static.tildacdn.com/tild6133-3063-4264-b861-336132626636/t5000x3750.jpg">
+                    <img src="https://moidomiks.ru/wp-content/uploads/2019/02/1-28.jpg">
+                    <img src="https://pro-dachnikov.com/uploads/posts/2021-10/1633389564_36-p-krasivaya-bolshaya-kukhnya-v-dome-foto-39.jpg">
                 </div>
             </div>
             <div class="container3">
